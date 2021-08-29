@@ -2,29 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<style type="text/css">
-		* {
-			margin:0px;
-			padding: 0px;
-			box-sizing: border-box;
-		}
-		body {
-			font-family:"Raleway",sans-serif;
-		}
-		.header {
-			width:100%;
-			height:50px;
-			line-height: 50px;
-			text-align: center;
-			background: #111;
-			color: #eee;
-			font-weight: 600;
-		}
-		.form {
-			padding:50px 20px;
-			background:#d2e9f7;
-		}
-		
+	
 	<div class="header">
 		Create Short URL
 	</div>
@@ -42,22 +20,5 @@
 			</tbody>
 		</table>
 	</div>
-
-	
-					
-		
-						<tr>
-							<td>${data[i].longurl}</td>
-							<td>${host}${data[i].shorturlid}</td>
-							<td>${data[i].count}</td>
-						</tr>
-					`;
-				}
-				document.querySelector("#list_urls tbody").innerHTML = html;
-			}).catch(function(error){
-				alert("Hatalı İşlem");
-			})
-		})();
-	</script>
 </body>
 </html>
