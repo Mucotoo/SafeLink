@@ -4,7 +4,7 @@ $data = '';
 //login.php?username=dGVzdA==&password=dGVzdHBhc3M=
 if (!empty($_GET) ) {
     if (!empty($_GET['username']) && !empty($_GET['password'])) {
-        if (base64_decode($_GET['username']) == 'ayd' && base64_decode($_GET['password']) == 'EAZAKMI') {
+        if (base64_decode($_GET['username']) == 'AYD' && base64_decode($_GET['password']) == 'HACK') {
             $data->code = "1";
 			$data->msg = "successfully logged in!";
         }else{
